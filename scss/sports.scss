@@ -1,0 +1,51 @@
+/*estilos de sección Deportes */
+.articuloDeporte1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-height: 400px;
+    max-width: 350px;
+  }
+}
+.predicciones {
+  text-align: center;
+  max-width: 100px;
+  max-height: 80px;
+  border-style: groove;
+  border-color: black;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.clippers {
+  color: darkblue;
+}
+
+.lakers {
+  color: gold;
+}
+
+.nets {
+  color: dimgray;
+}
+
+.sixers {
+  color: darkred;
+}
+
+.bucks {
+  color: darkgreen;
+}
+
+.wolves {
+  color: aqua;
+}
+
+.gds {
+  color: yellow;
+}

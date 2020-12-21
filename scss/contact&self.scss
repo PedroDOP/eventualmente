@@ -1,0 +1,35 @@
+/* Sección Contact*/
+
+.headerContacto,
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formularioTitulo {
+  max-width: 550px;
+  padding: 20px 20px 10px 10px;
+  margin-bottom: 20px;
+  border-style: groove;
+  border-color: rgb(24, 24, 24);
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Sección Self */
+
+.headerSelf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.selfEventualmente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,37 @@
+/* estilos de artículo Música */
+
+.articuloMusica1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.articuloMusica1 img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+/* Estilos de EPs 2019*/
+
+.zacari,
+.arawato,
+.rauw {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.zacari img,
+.arawato img,
+.rauw img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+.zacari img:hover,
+.arawato img:hover,
+.rauw img:hover {
+  transform: rotate(-20deg);
+}

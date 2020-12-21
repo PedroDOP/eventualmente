@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Eventualmente</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar">
+      <div id="nav-act">
+        <a href="#" class="button" id="off-button"
+          ><i class="material-icons nav-icon">keyboard_arrow_left</i></a
+        >
+      </div>
+      <ul class="nav-sect">
+        <li class="link-text"><a href="/music/musichome.html">Música</a></li>
+        <li class="link-text"><a href="/sports/sporthome.html">Deportes</a></li>
+        <li class="link-text"><a href="self.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <div id="nav-act">
+      <a href="#" class="button" id="on-button"
+        ><i class="material-icons nav-icon">keyboard_arrow_right</i></a
+      >
+    </div>
+
+    <div>
+      <a href="/index.html" class="logo-container"
+        ><img src="/media/logo.png" alt="Logo de Eventualmente"
+      /></a>
+    </div>
+
+    <header class="headerContacto">
+      <h2>Contacto</h2>
+      <p>
+        Si quieres recomendarnos un tema para hablar en nuestra próxima
+        publicación, darnos alguna recomendación o crítica, o simplemente
+        saludarnos, completa el siguiente formulario.
+      </p>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <form>
+          <fieldset class="formularioTitulo">
+            <legend>Formulario</legend>
+
+            <div>
+              <label for="nombreUsario">Nombre:</label>
+              <input
+                type="text"
+                name="nombreUsuario"
+                placeholder="Tu nombre aquí"
+              />
+            </div>
+
+            <div>
+              <label for="apellidoUsuario">Apellido:</label>
+              <input
+                type="text"
+                name="apellidoUsuario"
+                placeholder="Tu apellido aquí"
+              />
+            </div>
+
+            <div>
+              <label for="mail">E-mail:</label>
+              <input type="mail" />
+            </div>
+
+            <div>
+              <div>¿Deseas recibir notificaciones por mail?</div>
+              <input type="checkbox" name="acepta" value="1" />
+            </div>
+
+            <div>
+              <textarea rows="10" cols="75"></textarea>
+            </div>
+            <input type="submit" value="Enviar formulario" />
+            <input type="reset" value="Limpiar formulario" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

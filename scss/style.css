@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand-VariableFont.ttf);
+}
+
+nav {
+  background-color: #181818;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: -150%;
+  -webkit-transition: 950ms;
+  transition: 950ms;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+nav .nav-sect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .link-text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  color: #e9d6c5;
+  text-decoration: none;
+}
+
+nav .link-text a:hover {
+  color: orangered;
+}
+
+.nav-icon {
+  font-size: 32px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+#on-button {
+  color: #181818;
+  position: fixed;
+}
+
+#off-button {
+  color: #e9d6c5;
+  text-decoration: none;
+}
+
+#off-button:hover {
+  color: orangered;
+}
+
+#navbar.active {
+  left: 0px;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+#wrapper.active {
+  left: 300px;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+/* Sección Contact*/
+.headerContacto,
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formularioTitulo {
+  max-width: 550px;
+  padding: 20px 20px 10px 10px;
+  margin-bottom: 20px;
+  border-style: groove;
+  border-color: #181818;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Sección Self */
+.headerSelf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.selfEventualmente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* estilos de artículo Música */
+.articuloMusica1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articuloMusica1 img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+/* Estilos de EPs 2019*/
+.zacari,
+.arawato,
+.rauw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zacari img,
+.arawato img,
+.rauw img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+.zacari img:hover,
+.arawato img:hover,
+.rauw img:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+/*estilos de sección Deportes */
+.articuloDeporte1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articuloDeporte1 img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+.predicciones {
+  text-align: center;
+  max-width: 100px;
+  max-height: 80px;
+  border-style: groove;
+  border-color: black;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.clippers {
+  color: darkblue;
+}
+
+.lakers {
+  color: gold;
+}
+
+.nets {
+  color: dimgray;
+}
+
+.sixers {
+  color: darkred;
+}
+
+.bucks {
+  color: darkgreen;
+}
+
+.wolves {
+  color: aqua;
+}
+
+.gds {
+  color: yellow;
+}
+
+h1 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+p {
+  font-family: "Quicksand";
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 0.8rem;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+.header-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authors {
+  margin: 0 0 0 2rem;
+  padding: 0 0 0 2rem;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.with-author {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.logo-container img {
+  max-width: 4.5%;
+  max-height: 1fr;
+}
+/*# sourceMappingURL=style.css.map */

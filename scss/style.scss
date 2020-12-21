@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand-VariableFont.ttf);
+}
+
+@import "navbar.scss";
+@import "contact&self.scss";
+@import "music.scss";
+@import "sports.scss";
+
+h1 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+p {
+  font-family: "Quicksand";
+  //font-style: italic;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 0.8rem;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+.header-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authors {
+  margin: 0 0 0 2rem;
+  padding: 0 0 0 2rem;
+  font-style: italic;
+  color: rgb(90, 90, 90);
+}
+
+.with-author {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: flex-end;
+  padding-top: 0.5rem;
+  margin-right: 1rem;
+  img {
+    max-width: 4.5%;
+    max-height: 1fr;
+  }
+}
