@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*estilos de sección Deportes */
+.articuloDeporte1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articuloDeporte1 img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.clippers {
+  color: darkblue;
+}
+
+.lakers {
+  color: gold;
+}
+
+.nets {
+  color: dimgray;
+}
+
+.sixers {
+  color: darkred;
+}
+
+.bucks {
+  color: darkgreen;
+}
+
+.wolves {
+  color: aqua;
+}
+
+.gsw {
+  color: yellow;
+}
+
+.basic-bg {
+  margin: 1rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basic-bg img {
+  padding: 1rem;
+  margin: 1rem;
+  max-height: 550px;
+  max-width: 450px;
+}
+
+.other-bg {
+  padding: 1.5rem;
+  background-color: #0e0606;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.other-bg img {
+  padding: 1rem;
+  margin: 1rem;
+  max-height: 550px;
+  max-width: 450px;
+}
+/*# sourceMappingURL=sports.css.map */

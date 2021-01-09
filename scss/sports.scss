@@ -9,13 +9,6 @@
     max-width: 350px;
   }
 }
-.predicciones {
-  text-align: center;
-  max-width: 100px;
-  max-height: 80px;
-  border-style: groove;
-  border-color: black;
-}
 
 th,
 td {
@@ -46,6 +39,37 @@ td {
   color: aqua;
 }
 
-.gds {
+.gsw {
   color: yellow;
+}
+
+.basic-bg {
+  margin: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  img {
+    padding: 1rem;
+    margin: 1rem;
+    max-height: 550px;
+    max-width: 450px;
+  }
+}
+
+.other-bg {
+  padding: 1.5rem;
+  background-color: rgb(14, 6, 6);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  img {
+    padding: 1rem;
+    margin: 1rem;
+    max-height: 550px;
+    max-width: 450px;
+  }
 }
