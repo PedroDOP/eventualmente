@@ -1,17 +1,21 @@
 /* estilos de artículo Música */
-
-.articuloMusica1 {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.articuloMusica1 img {
-  max-height: 400px;
-  max-width: 350px;
+.articuloMusica {
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  img {
+    max-height: 450px;
+    max-width: 400px;
+  }
 }
-
 /* Estilos de EPs 2019*/
 
 .zacari,
@@ -21,11 +25,17 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  p {
+    line-height: 1.2rem;
+  }
 }
 
 .zacari img,
 .arawato img,
 .rauw img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   max-height: 400px;
   max-width: 350px;
 }
@@ -34,4 +44,22 @@
 .arawato img:hover,
 .rauw img:hover {
   transform: rotate(-20deg);
+}
+
+.ep-title {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/*Estilos de MQEE: Febrero 2020*/
+
+.arca,
+.myke,
+.sauce,
+.ciudad {
+  img {
+    max-height: 400px;
+    max-width: 350px;
+  }
 }

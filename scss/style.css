@@ -150,7 +150,7 @@ legend {
 }
 
 /* estilos de artículo Música */
-.articuloMusica1 {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,9 +166,18 @@ legend {
           align-items: center;
 }
 
-.articuloMusica1 img {
-  max-height: 400px;
-  max-width: 350px;
+.articuloMusica {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.articuloMusica img {
+  max-height: 450px;
+  max-width: 400px;
 }
 
 /* Estilos de EPs 2019*/
@@ -190,9 +199,18 @@ legend {
           align-items: center;
 }
 
+.zacari p,
+.arawato p,
+.rauw p {
+  line-height: 1.2rem;
+}
+
 .zacari img,
 .arawato img,
 .rauw img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   max-height: 400px;
   max-width: 350px;
 }
@@ -204,8 +222,26 @@ legend {
           transform: rotate(-20deg);
 }
 
+.ep-title {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/*Estilos de MQEE: Febrero 2020*/
+.arca img,
+.myke img,
+.sauce img,
+.ciudad img {
+  max-height: 400px;
+  max-width: 350px;
+}
+
 /*estilos de sección Deportes */
-.articuloDeporte1 {
+.articuloDeporte {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,9 +257,9 @@ legend {
           align-items: center;
 }
 
-.articuloDeporte1 img {
+.articuloDeporte img {
   max-height: 400px;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 th,
@@ -310,6 +346,12 @@ td {
   max-width: 450px;
 }
 
+.player-title {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 h1 {
   font-family: "Quicksand";
   font-weight: bold;
@@ -351,7 +393,7 @@ body {
 }
 
 .authors {
-  margin: 0 0 0 2rem;
+  margin: 0 0 2rem 2rem;
   padding: 0 0 0 2rem;
   font-style: italic;
   color: #5a5a5a;
