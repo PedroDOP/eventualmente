@@ -1,20 +1,48 @@
 /* estilos de artículo Música */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.headerMusica {
+  font-size: 1.5em;
 }
 
-.articuloMusica {
-  align-self: center;
+.articuloMusica1 {
+  grid-area: articulo1;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 6rem;
   padding: 1rem;
   img {
     max-height: 450px;
     max-width: 400px;
   }
+}
+
+.articuloMusica2 {
+  grid-area: articulo2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+  padding: 1rem;
+  img {
+    max-height: 450px;
+    max-width: 400px;
+  }
+}
+
+.title-article1 {
+  grid-area: titulo1;
+  margin-right: 4rem;
+}
+
+.title-article2 {
+  grid-area: titulo2;
+  margin-right: 4rem;
+}
+
+.favs {
+  font-style: italic;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 17px;
 }
 /* Estilos de EPs 2019*/
 
@@ -46,7 +74,8 @@
   transform: rotate(-20deg);
 }
 
-.ep-title {
+.ep-title,
+.p-title {
   font-size: 2rem;
   padding: 1rem;
   margin-top: 2rem;
@@ -58,8 +87,18 @@
 .myke,
 .sauce,
 .ciudad {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     max-height: 400px;
     max-width: 350px;
+  }
+  p {
+    line-height: 1.2rem;
   }
 }

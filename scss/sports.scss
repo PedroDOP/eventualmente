@@ -1,21 +1,31 @@
 /*estilos de sección Deportes */
-.articuloDeporte {
+
+.headerDeporte {
+  font-size: 1.5em;
+}
+
+.articuloDeporte1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 6rem;
   padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  grid-area: articulo1;
   img {
     max-height: 400px;
     max-width: 400px;
   }
 }
 
-th,
-td {
-  text-align: center;
+.articuloDeporte2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+  padding: 1rem;
+  grid-area: articulo2;
+  img {
+    max-height: 400px;
+    max-width: 400px;
+  }
 }
 
 .clippers {
@@ -44,6 +54,34 @@ td {
 
 .gsw {
   color: yellow;
+}
+
+.rockets {
+  color: rgb(173, 8, 35);
+}
+
+.hawks {
+  color: rgb(216, 32, 0);
+}
+
+.nuggets {
+  color: rgb(66, 116, 136);
+}
+
+.heat {
+  color: rgb(126, 1, 1);
+}
+
+.grizzlies {
+  color: rgb(78, 78, 172);
+}
+
+.pistons {
+  color: rgb(255, 14, 14);
+}
+
+.cavs {
+  color: rgb(41, 10, 6);
 }
 
 .basic-bg {
@@ -77,8 +115,38 @@ td {
   }
 }
 
+.trade {
+  background-color: rgb(204, 203, 203);
+  margin-bottom: 0.5rem;
+}
+
 .player-title {
   font-size: 2rem;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+.grades {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  font-family: "Quicksand";
+  font-size: bold;
+  background-color: rgb(180, 179, 179);
+  border: solid 1.5px rgb(117, 116, 116);
+}
+
+.lista-drummond {
+  border: solid 2px black;
+  font-family: "Quicksand";
+  font-style: oblique;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 16px;
+  li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+  }
 }

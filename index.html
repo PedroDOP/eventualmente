@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Eventualmente</title>
-    <meta
-      name="description"
-      content="Blog basado en opiniones sobre tópicos de música, deportes, cine, arte o cualquier pasión posible de abarcar en un texto."
-    />
-    <meta name="keywords" content="Blog,Reseña,Opinion,Musica,Deportes" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="scss/style.css" />
+    <meta name="description" content="Blog basado en opiniones sobre tópicos de música, deportes, cine, arte o cualquier pasión posible de abarcar en un texto."/>
+    <meta name="keywords" content="Blog,Reseña,Opinion,Musica,Deportes"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="scss/style.css"/>
   </head>
 
   <body>
     <nav id="navbar" class="navbar">
       <div id="nav-act">
-        <a href="#" class="button" id="off-button"
-          ><i class="material-icons nav-icon">keyboard_arrow_left</i></a
-        >
+        <a href="#" class="button" id="off-button">
+          <i class="material-icons nav-icon">keyboard_arrow_left</i>
+        </a>
       </div>
 
       <ul class="nav-sect">
@@ -33,25 +28,58 @@
     </nav>
 
     <div>
-      <a href="#" class="button" id="on-button"
-        ><i class="material-icons nav-icon">keyboard_arrow_right</i></a
-      >
+      <a href="#" class="button" id="on-button">
+        <i class="material-icons nav-icon">keyboard_arrow_right</i>
+      </a>
     </div>
 
     <div>
-      <a href="" class="logo-container"
-        ><img src="media/logo.png" alt="Logo de Eventualmente"
-      /></a>
+      <a href="" class="logo-container">
+        <img src="media/logo.png" alt="Logo de Eventualmente"/>
+      </a>
     </div>
 
     <header class="header-home">
       <h1>Eventualmente</h1>
     </header>
 
-    <main></main>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide carrusel1">
+            <h3><a href="music/articles/ep2019.html">Mis EP's favoritos de 2019</a></h3>
+            <p>por Pedro Oliveira</p>
+          </div>
+          <div class="swiper-slide carrusel2">
+            <h3><a href="sports/articles/nbadeadline2020.html">Califacando el Deadline 2020 de la NBA</a></h3>
+            <p>por Pedro Oliveira</p>
+          </div>
+          <div class="swiper-slide carrusel3">
+            <h3><a href="sports/articles/nbafa2019.html">Predicciones para la Agencia Libre de la NBA 2019</a></h3>
+            <p class="alt">por Pedro Oliveira</p>
+          </div>
+          <div class="swiper-slide carrusel4">
+            <h3><a href="music/articles/loqueescuchoenero2020.html">Música que estoy Escuchando: Febrero 2020</a></h3>
+            <p class="alt">por Pedro Oliveira</p>
+          </div>
+      </div>
 
-    <footer></footer>
-
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <small>©Eventualmente 2020. Todos los derechos reservados.</small>
+    </footer>
+    
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>  
   </body>
 </html>

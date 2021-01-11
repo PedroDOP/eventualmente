@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  a {
+    text-decoration: none;
+  }
 }
 
 @font-face {
@@ -13,9 +16,12 @@
 @import "contact&self.scss";
 @import "music.scss";
 @import "sports.scss";
+@import "carrusel.scss";
 
+/*Estilos Generales*/
 h1 {
   font-family: "Quicksand";
+  font-size: 40px;
   font-weight: bold;
   margin: 1.5rem;
   padding: 1.5rem;
@@ -48,6 +54,13 @@ body {
   align-items: center;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .authors {
   margin: 0 0 2rem 2rem;
   padding: 0 0 0 2rem;
@@ -70,4 +83,16 @@ body {
     max-width: 4.5%;
     max-height: 1fr;
   }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "articulo1 titulo1"
+    "articulo2 titulo2";
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
