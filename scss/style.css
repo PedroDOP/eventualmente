@@ -305,9 +305,9 @@ legend {
 }
 
 .articuloDeporte1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: articulo1;
@@ -319,9 +319,9 @@ legend {
 }
 
 .articuloDeporte2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: articulo2;
@@ -610,6 +610,8 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .authors {
