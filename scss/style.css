@@ -18,12 +18,12 @@
 nav {
   background-color: #181818;
   width: 250px;
-  height: 100vh;
+  height: 65vh;
   position: fixed;
   left: -150%;
   -webkit-transition: 950ms;
   transition: 950ms;
-  z-index: 1;
+  z-index: 99;
   overflow-x: hidden;
 }
 
@@ -112,12 +112,13 @@ nav .link-text a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Quicksand";
 }
 
 .formularioTitulo {
   max-width: 550px;
-  padding: 20px 20px 10px 10px;
-  margin-bottom: 20px;
+  padding: 1.3rem 1.3rem 1rem 1rem;
+  margin-bottom: 1.3rem;
   border-style: groove;
   border-color: #181818;
 }
@@ -434,7 +435,7 @@ legend {
 
 .other-bg img {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   max-height: 550px;
   max-width: 450px;
 }
@@ -553,7 +554,7 @@ legend {
 /*Estilos Generales*/
 h1 {
   font-family: "Quicksand";
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: bold;
   margin: 1.5rem;
   padding: 1.5rem;
@@ -636,7 +637,7 @@ body {
 }
 
 .logo-container img {
-  max-width: 4.5%;
+  max-width: 4rem;
   max-height: 1fr;
 }
 
@@ -654,5 +655,87 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .swiper-container {
+    width: 360px;
+    height: 200px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .articuloMusica1,
+  .articuloMusica2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  .articuloMusica1 img,
+  .articuloMusica2 img {
+    max-width: 280px;
+    max-height: 250px;
+  }
+  .title-article1,
+  .title-article2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    padding: 0;
+  }
+  .articuloDeporte1,
+  .articuloDeporte2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  .articuloDeporte1 img,
+  .articuloDeporte2 img {
+    max-width: 280px;
+    max-height: 250px;
+  }
+  .basic-bg img,
+  .other-bg img {
+    max-width: 360px;
+  }
+  form,
+  fieldset,
+  textarea,
+  .formulario,
+  .formularioTitulo {
+    max-width: 320px;
+    margin: 0.2rem;
+  }
+  input {
+    width: 150px;
+    height: 22px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

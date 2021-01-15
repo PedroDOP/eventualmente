@@ -21,7 +21,7 @@
 /*Estilos Generales*/
 h1 {
   font-family: "Quicksand";
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: bold;
   margin: 1.5rem;
   padding: 1.5rem;
@@ -80,7 +80,7 @@ body {
   padding-top: 0.5rem;
   margin-right: 1rem;
   img {
-    max-width: 4.5%;
+    max-width: 4rem;
     max-height: 1fr;
   }
 }
@@ -95,4 +95,75 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+}
+
+//Media Queries
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .swiper-container {
+    width: 360px;
+    height: 200px;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .articuloMusica1,
+  .articuloMusica2 {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    img {
+      max-width: 280px;
+      max-height: 250px;
+    }
+  }
+
+  .title-article1,
+  .title-article2 {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .articuloDeporte1,
+  .articuloDeporte2 {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    img {
+      max-width: 280px;
+      max-height: 250px;
+    }
+  }
+
+  .basic-bg,
+  .other-bg {
+    img {
+      max-width: 360px;
+    }
+  }
+
+  form,
+  fieldset,
+  textarea,
+  .formulario,
+  .formularioTitulo {
+    max-width: 320px;
+    margin: 0.2rem;
+  }
+
+  input {
+    width: 150px;
+    height: 22px;
+  }
 }
