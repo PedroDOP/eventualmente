@@ -144,9 +144,9 @@ body {
 
   .container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .articuloMusica1,
@@ -164,8 +164,9 @@ body {
   .title-article2 {
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    padding: 0;
+    margin: 0.5rem;
+    padding: 0.5;
+    max-width: 300px;
   }
 
   .articuloDeporte1,
