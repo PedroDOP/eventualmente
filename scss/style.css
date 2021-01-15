@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+* a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "Quicksand";
   src: url(../fonts/Quicksand-VariableFont.ttf);
@@ -165,12 +170,11 @@ legend {
   grid-area: articulo1;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
 }
 
 .articuloMusica1 img {
-  max-height: 450px;
+  max-height: 400px;
   max-width: 400px;
 }
 
@@ -180,12 +184,11 @@ legend {
   grid-area: articulo2;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
 }
 
 .articuloMusica2 img {
-  max-height: 450px;
+  max-height: 400px;
   max-width: 400px;
 }
 
@@ -193,14 +196,12 @@ legend {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: titulo1;
-  margin-right: 4rem;
 }
 
 .title-article2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: titulo2;
-  margin-right: 4rem;
 }
 
 .favs {
@@ -306,7 +307,6 @@ legend {
 .articuloDeporte1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -321,7 +321,6 @@ legend {
 .articuloDeporte2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -530,6 +529,10 @@ legend {
   color: black;
 }
 
+.swiper-slide .alt a:visited {
+  color: black;
+}
+
 .carrusel1 {
   background-image: url(../media/zacariclose.png);
 }
@@ -641,20 +644,75 @@ body {
   max-height: 1fr;
 }
 
+.logo-container img:hover {
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr, 0.5fr;
+      grid-template-columns: 1fr, 0.5fr;
+  -ms-grid-rows: 1fr, 0.5fr;
+      grid-template-rows: 1fr, 0.5fr;
       grid-template-areas: "articulo1 titulo1" "articulo2 titulo2";
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 100vh;
+  grid-column-gap: 1rem;
+}
+
+@-webkit-keyframes rotation {
+  20% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  60% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  80% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  20% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  60% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  80% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 650px) {

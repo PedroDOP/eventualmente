@@ -7,10 +7,9 @@
   grid-area: articulo1;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
   img {
-    max-height: 450px;
+    max-height: 400px;
     max-width: 400px;
   }
 }
@@ -19,22 +18,19 @@
   grid-area: articulo2;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 6rem;
   padding: 1rem;
   img {
-    max-height: 450px;
+    max-height: 400px;
     max-width: 400px;
   }
 }
 
 .title-article1 {
   grid-area: titulo1;
-  margin-right: 4rem;
 }
 
 .title-article2 {
   grid-area: titulo2;
-  margin-right: 4rem;
 }
 
 .favs {
