@@ -388,6 +388,10 @@ legend {
   color: #290a06;
 }
 
+.initial {
+  margin-bottom: 5rem;
+}
+
 .basic-bg {
   margin: 1rem;
   padding: 1.5rem;
@@ -396,8 +400,8 @@ legend {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -408,14 +412,14 @@ legend {
 
 .basic-bg img {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   max-height: 550px;
   max-width: 450px;
 }
 
 .other-bg {
   padding: 1.5rem;
-  background-color: #0e0606;
+  background-color: #290f0f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,6 +441,63 @@ legend {
   margin: 0.5rem;
   max-height: 550px;
   max-width: 450px;
+}
+
+.middle-bg {
+  padding: 1.5rem;
+  background-color: #f5ebb2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.middle-bg img {
+  padding: 1rem;
+  margin: 0.5rem;
+  max-height: 550px;
+  max-width: 450px;
+}
+
+.upcoming {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.week-mvp {
+  font-weight: bolder;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .trade {
@@ -568,7 +629,7 @@ h3,
 h4 {
   font-family: "Quicksand";
   font-weight: bold;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
 }
 

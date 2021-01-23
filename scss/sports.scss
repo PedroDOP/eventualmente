@@ -82,16 +82,20 @@
   color: rgb(41, 10, 6);
 }
 
+.initial {
+  margin-bottom: 5rem;
+}
+
 .basic-bg {
   margin: 1rem;
   padding: 1.5rem;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   img {
     padding: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     max-height: 550px;
     max-width: 450px;
   }
@@ -99,7 +103,7 @@
 
 .other-bg {
   padding: 1.5rem;
-  background-color: rgb(14, 6, 6);
+  background-color: rgb(41, 15, 15);
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -111,6 +115,45 @@
     max-height: 550px;
     max-width: 450px;
   }
+}
+
+.middle-bg {
+  padding: 1.5rem;
+  background-color: rgb(245, 235, 178);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+  img {
+    padding: 1rem;
+    margin: 0.5rem;
+    max-height: 550px;
+    max-width: 450px;
+  }
+}
+
+.upcoming {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.week-mvp {
+  font-weight: bolder;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .trade {
